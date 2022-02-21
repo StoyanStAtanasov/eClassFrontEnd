@@ -1,31 +1,31 @@
 <div class="eclass-grid-container">
-    <div class="eclass-header">
-        <div class="header-item header-description">
-            <div class="box-content">
-                <span class="header-title">{{pageTitle}}</span>
-            </div>
-        </div>
-        <div class="header-item import-csv-button">
-            <div class="box-content">
-                <button mat-stroked-button (click)="openFile()">
-                    <span>Import CSV file</span>
-                    <input type="file" style="display: none" (change)="daoService.getCsvFile($event)" accept="text/csv,application/json">
-                </button>
-            </div>
-        </div>
+  <div class="eclass-header">
+    <div class="header-item header-description">
+      <div class="box-content">
+        <span class="header-title">{{ pageTitle }}</span>
+      </div>
     </div>
-    <div class="eclass-search">
-        <div class="search-box">
-            <app-search-box></app-search-box>
-        </div>
+    <div class="header-item import-csv-button">
+      <div class="box-content">
+        <button mat-stroked-button (click)="openFile()">
+          <span>Import CSV file</span>
+          <!-- <input type="file" style="display: none" (change)="daoService.getCsvFile($event)" accept="text/csv,application/json"> -->
+        </button>
+      </div>
     </div>
-    <div class="eclass-tree">
-        <div class="tree-box">
-            <app-tree-box></app-tree-box>
-        </div>
+  </div>
+  <div class="eclass-search">
+    <div class="search-box">
+      <app-search-box></app-search-box>
     </div>
-    <div class="eclass-main">
-        <app-table-box></app-table-box>
+  </div>
+  <div class="eclass-tree">
+    <div class="tree-box">
+      <app-tree-box></app-tree-box>
     </div>
-    <!--    <div class="eclass-footer">Footer</div>-->
+  </div>
+  <div class="eclass-main">
+    <app-table-box></app-table-box>
+  </div>
+  <!--    <div class="eclass-footer">Footer</div>-->
 </div>
